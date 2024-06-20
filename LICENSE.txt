@@ -15,9 +15,12 @@ copies or substantial portions of the Software.
 
 
 **Restricted-permissions:** You may take code from this project with intention of 
-editing or adding additions that may be applied to the original repository: 
-("https://github.com/GradientGamer-XD/Magical-World/") 
-You may NOT redistribute this software as your own in any way, shape, or form 
+editing or adding additions that may be applied to the original repository:
+******************************************************************
+https://github.com/GradientGamer-XD/Magical-World/
+******************************************************************
+
+You may NOT redistribute this software as your own in any way, shape, or form on any platform
 without explicit permission of the repository owner.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR

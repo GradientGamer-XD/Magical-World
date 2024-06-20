@@ -1,9 +1,12 @@
 package net.gradient.magicalworld;
 
 import com.mojang.logging.LogUtils;
+import net.gradient.magicalworld.items.MWItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +33,7 @@ public class MagicalWorld
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
+        MWItems.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
@@ -37,6 +41,8 @@ public class MagicalWorld
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
+        modEventBus.addListener(this::addCreative);
+
 
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
@@ -51,6 +57,13 @@ public class MagicalWorld
     }
 
     // Add the example block item to the building blocks tab
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(MWItems.TOMATO);
+        }
+
+    }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
 
@@ -64,6 +77,7 @@ public class MagicalWorld
         public void onInitialize() {
             GeckoLib.initialize();
             LOGGER.info("Mod is running");
+            LOGGER.info("loading");
         }
     }
 }

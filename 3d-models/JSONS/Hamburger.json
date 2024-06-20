@@ -1,0 +1,415 @@
+{
+  "credit": "Export",
+  "textures": {
+    "1": "magicalworld:item/hamburger/patty",
+    "2": "magicalworld:item/hamburger/topbun1",
+    "3": "magicalworld:item/hamburger/topbun2",
+    "4": "magicalworld:item/hamburger/hamburger",
+    "particle": "magicalworld:item/hamburger/patty"
+  },
+  "elements": [
+    {
+      "from": [
+        5,
+        0,
+        5
+      ],
+      "to": [
+        11,
+        1,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          7,
+          0,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            12,
+            1
+          ],
+          "texture": "#4"
+        },
+        "east": {
+          "uv": [
+            6,
+            1,
+            12,
+            2
+          ],
+          "texture": "#4"
+        },
+        "south": {
+          "uv": [
+            6,
+            2,
+            12,
+            3
+          ],
+          "texture": "#4"
+        },
+        "west": {
+          "uv": [
+            6,
+            3,
+            12,
+            4
+          ],
+          "texture": "#4"
+        },
+        "up": {
+          "uv": [
+            6,
+            6,
+            0,
+            0
+          ],
+          "texture": "#4"
+        },
+        "down": {
+          "uv": [
+            6,
+            6,
+            0,
+            12
+          ],
+          "texture": "#4"
+        }
+      }
+    },
+    {
+      "from": [
+        5,
+        2,
+        5
+      ],
+      "to": [
+        11,
+        3,
+        11
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          7,
+          2,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            0,
+            12,
+            1
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            6,
+            1,
+            12,
+            2
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            6,
+            2,
+            12,
+            3
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            6,
+            3,
+            12,
+            4
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            6,
+            6,
+            0,
+            0
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            6,
+            6,
+            0,
+            12
+          ],
+          "texture": "#2"
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        3,
+        6
+      ],
+      "to": [
+        10,
+        4,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          7,
+          3,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            8,
+            1
+          ],
+          "texture": "#3"
+        },
+        "east": {
+          "uv": [
+            4,
+            1,
+            8,
+            2
+          ],
+          "texture": "#3"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            8,
+            3
+          ],
+          "texture": "#3"
+        },
+        "west": {
+          "uv": [
+            4,
+            3,
+            8,
+            4
+          ],
+          "texture": "#3"
+        },
+        "up": {
+          "uv": [
+            4,
+            4,
+            0,
+            0
+          ],
+          "texture": "#3"
+        },
+        "down": {
+          "uv": [
+            4,
+            4,
+            0,
+            8
+          ],
+          "texture": "#3"
+        }
+      }
+    },
+    {
+      "from": [
+        6,
+        1,
+        6
+      ],
+      "to": [
+        10,
+        2,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          7,
+          1,
+          7
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            0,
+            8,
+            1
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            4,
+            1,
+            8,
+            2
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            8,
+            3
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            4,
+            3,
+            8,
+            4
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            4,
+            4,
+            0,
+            0
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            4,
+            4,
+            0,
+            8
+          ],
+          "texture": "#1"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2.75,
+        6.5
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        2.75,
+        6.5
+      ]
+    },
+    "firstperson_righthand": {
+      "translation": [
+        0,
+        8.75,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        0,
+        8.75,
+        0
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3.75,
+        0
+      ]
+    },
+    "gui": {
+      "translation": [
+        0,
+        12,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        14.25,
+        0
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        18,
+        0
+      ],
+      "scale": [
+        3,
+        3,
+        3
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "Hamburger",
+      "origin": [
+        8,
+        8,
+        8
+      ],
+      "color": 0,
+      "children": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}
