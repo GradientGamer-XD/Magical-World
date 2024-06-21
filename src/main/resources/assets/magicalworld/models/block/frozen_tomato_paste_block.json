@@ -1,0 +1,7 @@
+
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "magicalworld:block/frozen_tomato_paste_block"
+  }
+}

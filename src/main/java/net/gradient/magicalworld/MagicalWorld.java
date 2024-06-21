@@ -1,8 +1,9 @@
 package net.gradient.magicalworld;
 
 import com.mojang.logging.LogUtils;
+import net.gradient.magicalworld.blocks.MWBlocks;
+import net.gradient.magicalworld.menus.MWCreativeTab;
 import net.gradient.magicalworld.items.MWItems;
-import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -10,7 +11,6 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -32,8 +32,11 @@ public class MagicalWorld
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // Register the commonSetup method for modloading
+
+        MWCreativeTab.register(modEventBus);
+        MWBlocks.register(modEventBus);
         MWItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
@@ -61,6 +64,11 @@ public class MagicalWorld
 
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(MWItems.TOMATO);
+
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(MWItems.TOMATO_PASTE);
         }
 
     }

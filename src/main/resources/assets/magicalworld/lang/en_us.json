@@ -1,3 +1,9 @@
 {
-  "item.magicalworld.tomato": "Tomato"
+  "item.magicalworld.tomato": "Tomato",
+  "item.magicalworld.tomato_paste": "Tomato Paste",
+  "creativetab.magicalworld_ctab": "Magical World",
+
+  "block.magicalworld.frozen_tomato_paste_block": "Frozen Tomato Paste"
+
+
 }

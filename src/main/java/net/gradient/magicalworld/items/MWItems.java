@@ -12,6 +12,7 @@ public class MWItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MagicalWorld.MODID);
 
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOMATO_PASTE = ITEMS.register("tomato_paste", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
